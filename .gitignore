@@ -34,3 +34,4 @@ build/
 .vscode/
 /src/main/resources/META-INF/MANIFEST.MF
 /out/artifacts/jFiller_v3_jar/BaseForm/
+/src/
