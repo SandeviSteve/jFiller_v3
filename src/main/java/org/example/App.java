@@ -264,8 +264,8 @@ public class App {
             JOptionPane.showMessageDialog(null,path);
 
             String path1 = path + "/BaseForm/WCR.jpg";
-            String path2 = path + "/BaseForm/ELCF1.jpg";
-            String path3 = path + "/BaseForm/ELCF2.jpg";
+            String path2 = path + "/BaseForm/LCF01.jpg";
+            String path3 = path + "/BaseForm/LCF02.jpg";
 
             Font font = new Font("Arial", Font.TYPE1_FONT, 25);
 
@@ -307,7 +307,7 @@ public class App {
             g1.drawString(vendorName, 901, 979);
             g1.drawString(issue, 396, 1035);
 
-            ImageIO.write(elcf1, "jpg", new File(path, reference + " ELCF1.jpg"));
+            ImageIO.write(elcf1, "jpg", new File(path, reference + " LCF01.jpg"));
 
             final BufferedImage elcf2 = ImageIO.read(new File(path3));
 
@@ -319,11 +319,11 @@ public class App {
             g2.drawString(dateCurrent, 700, 1157);
 
 
-            ImageIO.write(elcf2, "jpg", new File(path, reference + " ELCF2.jpg"));
+            ImageIO.write(elcf2, "jpg", new File(path, reference + " LCF02.jpg"));
 
 
         } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "Input files not found, make sure they are in correct format - ELCF1.jpg, WCR.jpg - and inside /BaseForm");
+            JOptionPane.showMessageDialog(null, "Input files not found, make sure they are in correct format - LCF01.jpg, WCR.jpg - and inside /BaseForm");
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
