@@ -256,8 +256,8 @@ public class App {
     public void printShitBro() {
         parseShit();
         try {
-            String path = new File(App.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath(); /* BUILD */
-//            var path = new File(App.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent(); /* COMP */
+//            String path = new File(App.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getAbsolutePath(); /* BUILD */
+            String path = new File(App.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParent(); /* COMP */
 
 
 
